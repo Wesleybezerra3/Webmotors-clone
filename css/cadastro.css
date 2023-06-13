@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300;400;500;600&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;700&display=swap');
+   
+
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,800;1,400;1,600&display=swap');
+:root{
+    --fonte-padrao:'Inconsolata', monospace;
+    --fonte-destaque:'Oswaldo', sans-serif;
+    --fonte-open-sans: 'Open Sans', 'sans serif';
+}
+
+.container-cadastro{
+ margin-top: 100px;
+}
+form{
+    display: grid;
+    position: relative;
+}
+form>div{
+    display: block;
+    font-size: 0.8rem;
+    margin-left: 30px;
+    color: blueviolet;
+}
+#social{
+    display: grid                                                                     ;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  
+}
+#social>a{
+    box-sizing: border-box;
+    text-align: center;
+    width: 90%;
+    height: 50px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+}
+#facebook{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    background-color: #4765AF;
+    box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.295);
+    font-weight: 600;
+    background-image: url('../imagens-icones/Facebook.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    transition-duration: .2s;
+    
+}
+#facebook:hover{
+    background-color: #284daa;
+    border: 2px solid;
+}
+#google{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000ad;
+    font-size: 1em;
+    font-weight: 600;
+    box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.096);
+    background-image: url('../imagens-icones/google_icon-icons.com_62736.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    transition-duration: .2s;
+}
+#google:hover{
+    background-color: #ffffff;
+    border: 2px solid black;
+}
+input::placeholder{
+    padding-left: 10px;
+    font-family: var(--fonte-open-sans);
+    font-weight: bold;
+    font-size: 1em;
+}
+#btnCadastro{
+    font-family: var(--fonte-destaque);
+    font-weight: 600;
+    font-size: 1.2em;
+    background-color: #f3123c;
+    color: #ffffff;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 80%;
+}
+input{
+    font-family: var(--fonte-padrao);
+    background-color: transparent;
+    border:1px solid rgba(46, 46, 46, 0.479);
+    border-radius: 15px;
+    outline: none;
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+}
+input:hover{
+    height: 55px;
+}
+
+#btnCadastro:hover{
+    background-color:rgb(200, 10, 46);
+  
+}
