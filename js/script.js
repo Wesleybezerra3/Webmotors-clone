@@ -49,10 +49,7 @@ $(document).ready(()=>{
 
 // Cadastro
 
-
-
-
-$('#btnCadastro').click(()=>{
+$('#btnLogin').click(()=>{
   var email =$('#email').val()
   var senha =$('#senha').val()
 
@@ -69,6 +66,8 @@ $('#btnCadastro').click(()=>{
    alert('Sucesso')
   }
 
+
+  
 })
 $(document).ready(()=>{
   let rotation=0

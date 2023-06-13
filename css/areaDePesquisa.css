@@ -1,0 +1,86 @@
+/*Pesquisar veiculos*/
+#boxSearch{
+    padding: 20px;
+    margin: auto;
+    width: 90%;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow:5px 5px 20px rgba(0, 0, 0, 0.199) ;
+}
+#areaDePesquisa{
+    
+    text-align: center;
+    padding: 10px;
+}
+#categorias{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+#categorias>span{
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: #000000;
+    margin: 10px;
+    cursor: pointer;
+}
+#categorias>span#carros{
+    
+    font-size: 20px;
+    border-bottom: 2px solid #f50707;
+   
+
+}
+#categorias>span#motos{
+    font-size: 18px;
+    color: #272424a8;
+   
+}
+.search-input {
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    width: 300px;
+    
+    font-size: 14px;
+   font-family: var(--poppins);
+  }
+  .search-input {
+    background-image: url('../imagens/Github-Octicons-Search-24.32.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 35px; 
+  }
+  .search-input:hover{
+    height: 40px;
+  }
+  .search-input:focus {
+    outline: none;
+    box-shadow: 0 0 3px #aaa;
+  }
+  
+  #linkSearch{
+    padding-top: 15px;
+    
+  }
+  #linkSearch>a{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+
+    background-color: #f3123c;
+    color: #ffffff;
+
+    font-family: var(--poppins);
+    font-weight: 600;
+    font-size: 1.2em;
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.308);
+    padding: 10px;
+    width: 280px;
+
+}
+  #linkSearch>a:hover{
+    background-color:rgb(200, 10, 46);
+  }

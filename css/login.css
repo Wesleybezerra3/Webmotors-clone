@@ -8,21 +8,25 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,800;1,400;1,600&display=swap');
 :root{
-    --fonte-padrao:'Inconsolata', monospace;
-    --fonte-destaque:'Oswaldo', sans-serif;
-    --fonte-open-sans: 'Open Sans', 'sans serif';
+    --poppins:'Poppins', sans-serif;
+    --cor1:#2E2D37;
 }
-
-.container-cadastro{
- margin-top: 100px;
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-login{
+    display: grid;
+   margin-top: 100px;
+   border-bottom:1px solid rgba(0, 0, 0, 0.137) ;
 }
 form{
     display: grid;
     position: relative;
 }
-form>div{
-    display: block;
-    font-size: 0.8rem;
+#campoObrig{
+    display: none;
+    font-size: 0.6rem;
     margin-left: 30px;
     color: blueviolet;
 }
@@ -44,6 +48,10 @@ form>div{
     border-radius: 10px;
     
 }
+#social>h1{
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.37);
+}
 #facebook{
     text-decoration: none;
     color: #ffffff;
@@ -54,13 +62,8 @@ form>div{
     background-image: url('../imagens-icones/Facebook.svg');
     background-repeat: no-repeat;
     background-position: left center;
-    transition-duration: .2s;
-    
 }
-#facebook:hover{
-    background-color: #284daa;
-    border: 2px solid;
-}
+
 #google{
     display: inline-block;
     text-decoration: none;
@@ -71,20 +74,17 @@ form>div{
     background-image: url('../imagens-icones/google_icon-icons.com_62736.svg');
     background-repeat: no-repeat;
     background-position: left center;
-    transition-duration: .2s;
+    
 }
-#google:hover{
-    background-color: #ffffff;
-    border: 2px solid black;
-}
+
 input::placeholder{
     padding-left: 10px;
-    font-family: var(--fonte-open-sans);
+    font-family: var(--poppins);
     font-weight: bold;
     font-size: 1em;
 }
-#btnCadastro{
-    font-family: var(--fonte-destaque);
+#btnLogin{
+    font-family: var(--poppins);
     font-weight: 600;
     font-size: 1.2em;
     background-color: #f3123c;
@@ -97,7 +97,7 @@ input::placeholder{
     width: 80%;
 }
 input{
-    font-family: var(--fonte-padrao);
+    font-family: var(--poppins);
     background-color: transparent;
     border:1px solid rgba(46, 46, 46, 0.479);
     border-radius: 15px;
@@ -111,7 +111,40 @@ input:hover{
     height: 55px;
 }
 
-#btnCadastro:hover{
+#btnLogin:hover{
     background-color:rgb(200, 10, 46);
   
 }
+#esqueciSenha{
+ margin-left: 5%;
+ margin-top: 10px;
+ font-size: 1em;
+ font-weight: bold;
+ font-family: var(--poppins);
+ text-decoration: none;
+ color: #f3123c;
+}
+
+p{
+text-align: center;
+margin-top: 50px;
+margin-bottom: 20px;
+}
+p>a{
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: var(--poppins);
+    text-decoration: none;
+    color: #f3123c; 
+}
+p>img{
+    padding-top: 2px;
+    padding-right: 2px;
+}
+footer{
+    background-color: var(--cor1);
+    width: 100%;
+    
+}
+

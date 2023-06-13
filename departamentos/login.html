@@ -9,13 +9,19 @@
    
     <link rel="stylesheet" href="../css/resposividade.css">
 
-    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagens-icones/favicon.png" type="image/x-icon">
          
     <script src="../js/script.js" defer></script>
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/cadastro.css">
-    <title>Area de Cadastro</title>
+  
+    <link rel="stylesheet" href="../css/geral.css">
+    <link rel="stylesheet" href="../css/resposividade.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/areaDePesquisa.css">
+    <link rel="stylesheet" href="../css/carrousel.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Webmotors-login</title>
 </head>
 <body>
 
@@ -89,24 +95,37 @@
         </div>
       </section>
 
-
-      <section class="container-cadastro">
+         
+      <section class="container-login">
          <section id="social">
            
-          <a href="#" id="facebook">Entar com Facebook</a>
-          <a href="#" id="google">Entar com Google</a>
+          <a href="#" id="facebook">Entrar com Facebook</a>
+          <a href="#" id="google">Entrar com Google</a>
           <h1>ou</h1>
          </section>
         <form id="formCadastro">
            
-          <input  type="email" name="email" id="email" placeholder="Seu E-mail" >
-           <div id="campoObrig"></div>
-          <input type="password" name="Senha" id="senha" placeholder="Crie Uma Senha ">
+          <input  type="email" name="email" id="email" placeholder="E-mail" >
+
+           <div id="campoObrig">Campo obrigatório</div>
+
+          <input type="password" name="Senha" id="senha" placeholder=" Senha ">
           <div id="eyeIcon"></div>
 
-           <div id="campoObrig"></div>
-           <input type="submit"  id="btnCadastro" name="btnCadastro3" value="cadastrar">
+           <div id="campoObrig">Campo obrigatório</div>
+           
+           <a id="esqueciSenha" href="#">Esqueci minha senha</a> 
+
+           <input type="submit"  id="btnLogin" name="btnLogin" value="Entrar">
+
+           <p>Não tem uma Conta?<a href="#">Crie a sua</a></p>
         </form>
-   
+        
+      </section>
+      <p><img src="../imagens-icones/help.svg" alt="">Precisa de ajuda?<a href="#">Fale com a gente</a></p>
+      
+      <footer>
+
+      </footer>
 </body>
 </html>
