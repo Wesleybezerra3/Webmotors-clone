@@ -15,10 +15,24 @@
     margin: 0;
     padding: 0;
 }
+#background{
+    background-image: url('../imagens/background-mobile.svg');
+    background-position: center;
+   
+    height: 80px;
+   width: 100%;
+   
+}
 .container-login{
     display: grid;
-   margin-top: 100px;
    border-bottom:1px solid rgba(0, 0, 0, 0.137) ;
+}
+#title{
+    color: rgba(0, 0, 0, 0.815);
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 25px;
 }
 form{
     display: grid;
@@ -31,7 +45,7 @@ form{
     color: blueviolet;
 }
 #social{
-    display: grid                                                                     ;
+    display:grid;                                                          
     margin: auto;
     width: 100%;
     text-align: center;
@@ -41,7 +55,7 @@ form{
     box-sizing: border-box;
     text-align: center;
     width: 90%;
-    height: 50px;
+    height: 45px;
     padding: 15px;
     margin: auto;
     margin-bottom: 20px;
@@ -55,25 +69,38 @@ form{
 #facebook{
     text-decoration: none;
     color: #ffffff;
-    font-size: 1em;
+    font-size: 0.8em;
     background-color: #4765AF;
-    box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.295);
+    
     font-weight: 600;
     background-image: url('../imagens-icones/Facebook.svg');
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: 10px;
 }
 
 #google{
     display: inline-block;
     text-decoration: none;
     color: #000000ad;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 600;
-    box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.096);
+    border: .5px solid rgba(0, 0, 0, 0.068);
     background-image: url('../imagens-icones/google_icon-icons.com_62736.svg');
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: 10px;
+    
+}
+#apple{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffffad;
+    background-color:#2E2D37 ;
+    font-size: 0.8em;
+    font-weight: 600;
+   
+    background-image: url('../imagens-icones/apple.svg');
+    background-repeat: no-repeat;
+    background-position: 10px;
     
 }
 
@@ -81,9 +108,11 @@ input::placeholder{
     padding-left: 10px;
     font-family: var(--poppins);
     font-weight: bold;
+    color: rgba(0, 0, 0, 0.253);
     font-size: 1em;
 }
 #btnLogin{
+    cursor: pointer;
     font-family: var(--poppins);
     font-weight: 600;
     font-size: 1.2em;
@@ -94,21 +123,18 @@ input::placeholder{
     border-radius: 10px;
     margin-top: 20px;
     padding: 10px;
-    width: 80%;
+    width: 90%;
 }
 input{
     font-family: var(--poppins);
     background-color: transparent;
-    border:1px solid rgba(46, 46, 46, 0.479);
-    border-radius: 15px;
+    border:1px solid rgba(46, 46, 46, 0.26);
+    border-radius: 10px;
     outline: none;
     width: 90%;
     height: 50px;
     margin: auto;
     margin-top: 10px;
-}
-input:hover{
-    height: 55px;
 }
 
 #btnLogin:hover{
@@ -127,7 +153,7 @@ input:hover{
 
 p{
 text-align: center;
-margin-top: 50px;
+margin-top: 40px;
 margin-bottom: 20px;
 }
 p>a{
@@ -145,6 +171,50 @@ p>img{
 footer{
     background-color: var(--cor1);
     width: 100%;
-    
+    height: 320px;
+}
+footer>p{
+    color: aliceblue;
+    font-family: var(--poppins);
+    font-size: 0.7em;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0%;
+
+}
+footer img{
+    width: 130px;
+    padding-left: 10px;
+}
+#linksFooterLogin ul{
+  
+    padding: 20px;
+    columns: 2;
+    list-style: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+}
+#linksFooterLogin li{
+    margin-bottom: 20px;
+}
+#linksFooterLogin a{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: var(--poppins);
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+#redesSociais ul{
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+}
+#redesSociais li{
+ padding-left: 20px;
+}
+#redesSociais img{
+  width: 24px;
 }
 

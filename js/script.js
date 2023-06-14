@@ -74,6 +74,9 @@ $(document).ready(()=>{
  $('#summary1').click(()=>{
   rotation+=180
   $('#arrowDown1').css({'transform':`rotate(${rotation}deg)`})
+  if(rotation==180){
+    rotation=-180
+  }
  })
 })
 $(document).ready(()=>{
@@ -81,6 +84,9 @@ $(document).ready(()=>{
  $('#summary2').click(()=>{
   rotation+=180
   $('#arrowDown2').css({'transform':`rotate(${rotation}deg)`})
+  if(rotation==180){
+    rotation=-180
+  }
  })
 })
 $(document).ready(()=>{
@@ -88,6 +94,9 @@ $(document).ready(()=>{
  $('#summary3').click(()=>{
   rotation+=180
   $('#arrowDown3').css({'transform':`rotate(${rotation}deg)`})
+  if(rotation==180){
+    rotation=-180
+  }
  })
 })
 $(document).ready(()=>{
@@ -95,8 +104,12 @@ $(document).ready(()=>{
  $('#summary4').click(()=>{
   rotation+=180
   $('#arrowDown').css({'transform':`rotate(${rotation}deg)`})
+  if(rotation==180){
+    rotation=-180
+  }
  })
 })
+
 
 
 
