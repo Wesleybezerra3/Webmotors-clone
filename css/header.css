@@ -1,10 +1,22 @@
-/*Header/Hamburguer/cadastro*/
+/*Header/Hamburguer/Login*/
+:root{
+    --poppins:'Poppins', sans-serif;
+    --cor1:#2E2D37;
+    --cor2:#595959;
+    --cor3:#8C8C8C;
+    --cor-detaque:#f3123c;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
 header {
     display: flex;
     position: relative;
-    justify-content: space-between;
-    height: 80px;
+    justify-content: space-between; 
+    height: 70px;
     width: 100%;
+    background-color: white;
     box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.103);
  }
  header img{
@@ -15,24 +27,32 @@ header {
  }
  #logo img{
      position: absolute;
-     top: 20px;
+     top: 10px;
+     left: 30px;
      width: 150px;
      height: 50px;
- 
  }
- #hamburguer{
-      position: relative;
-      height: 100%;
-      width: 50px;
-      margin-top: 20px;
-      margin-right: 20px;
- }
- #hamburguer> button{
-     top: 12px;
-     right: 10px;
+ #abrirNav{
+    
+     top: 35%;
+     right: 20px;
      position: absolute;
      background-color: transparent;
      border: none;
      cursor: pointer;
  }
- 
+#nav1{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+}
+#nav1 span{
+    font-weight: 400;
+    font-size: 0.8em;
+    font-family: var(--poppins);
+    padding: 30px 0px 10px 50px;
+}
+
+
