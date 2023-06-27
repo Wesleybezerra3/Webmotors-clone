@@ -1,25 +1,16 @@
-$(document).ready(()=>{
-  let abrirNav =$('#abrirNav').click(()=>{
-    $('#container-navbar').css('display','block');
-  });
 
- let fecharNav = $('#fecharNav').click(()=>{
-   $('#container-navbar').css('display','none');
- });
-})
-
+     
 $(document).ready(()=>{
   $('#motos').click(()=>{
     $('#motos').css({
       'color':'#000000',
-        'border-bottom':'2px solid #f50707',
-          'font-size':'20px'
+        'border-bottom':'3px solid #f50707'
+         
          });
 
          $('#search').prop('placeholder','Digite marca ou modelo da moto');
 
        $('#carros').css({
-        'font-size':'18px',
         'color':'#272424a8',
         'border-bottom':'none'
      });
@@ -32,13 +23,12 @@ $(document).ready(()=>{
 $(document).ready(()=>{
   $('#carros').click(()=>{
     $('#carros').css({'color':'#000000',
-      'border-bottom':'2px solid #f50707',
-        'font-size':'20px'
+      'border-bottom':'3px solid #f50707'
 });
 
   $('#search').attr('placeholder','Digite marca ou modelo do carro');
 
-  $('#motos').css({'font-size':'18px',
+  $('#motos').css({
      'color':'#272424a8',
        'border-bottom':'none'
 });
@@ -47,28 +37,21 @@ $(document).ready(()=>{
 
 
 
-// Cadastro
-
-$('#btnLogin').click(()=>{
-  var email =$('#email').val()
-  var senha =$('#senha').val()
 
 
-    function validarEmail(email){
-      let padrao=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-      return padrao.test(email)
-  }
-  function validarSenha(senha){
-    let padrao = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
-    return padrao.test(senha)
-  }
-  if(validarEmail(email) && validarSenha){
-   alert('Sucesso')
-  }
+ // MENU MOBILE
+
+$(document).ready(()=>{
+    let abrirNav =$('#abrirNav').click(()=>{
+    $('#container-navbar').css('display','block');
+});
+                                
+let fecharNav = $('#fecharNav').click(()=>{
+   $('#container-navbar').css('display','none');
+ });
+})                                            
 
 
-  
-})
 $(document).ready(()=>{
   let rotation=0
  $('#summary1').click(()=>{
@@ -113,9 +96,18 @@ $(document).ready(()=>{
 
 
 
-// $('#email').keyup(()=>{
-// $('#campoObrig').text($('#email').val())
-// })
+
+
+
+
+
+
+
+
+
+//  $('#email').keyup(()=>{
+//  $('#campoObrig').text($('#email').val())
+//  })
 
 
    

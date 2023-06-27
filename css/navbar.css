@@ -80,8 +80,10 @@ summary>h1{
     color: rgba(0, 0, 0, 0.719);
 }
 summary>img{
+   
     padding-top: 15px;
-    height: 12px;
+    height: 15px;
+   
     transition-duration: .3s;
 }
 .itemDetails{

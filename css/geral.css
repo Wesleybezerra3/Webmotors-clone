@@ -26,7 +26,8 @@
 }
   
 body{
-    background-color: #ECEDF2;
+    background-color: #ffffff;
     font-family: var(--poppins);
+    width: 100%;
 }
 

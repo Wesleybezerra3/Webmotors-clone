@@ -14,7 +14,6 @@
      <link rel="stylesheet" href="css/resposividade.css">
      <link rel="stylesheet" href="css/navbar.css">
      <link rel="stylesheet" href="css/areaDePesquisa.css">
-     <link rel="stylesheet" href="css/carrousel.css">
      <link rel="stylesheet" href="css/header.css">
 
 
@@ -28,32 +27,29 @@
     <div id="logo">
       <a href="index.html"><img src="../imagens-icones/logo-webmotors.svg" alt="logo"></a>
     </div>
-      <button id="abrirNav"><img src="imagens/Hamburguer.png" alt=""></button>
+      <button id="abrirNav"><img src="imagens-icones/hamburguer.svg"  alt="Abrir Menu"></button>
     
-     <nav id="nav1">
-      <span>Comprar</span>
-      <span>Vender</span>
-      <span>Serviços</span>
-      <span>Ajuda</span>
-
-     </nav>
-      <nav id="nav2">
-       <span><img src="imagens-icones/user_you.svg" alt=""></span>
-      </nav>
+     <nav id="menuDesktop">
+      <div class="departament">Comprar</div>
+       <div class="departament">Vender</div>
+       <div class="departament">Serviços</div>
+       <div class="departament">Ajuda</div>
        
+       </nav>
   </header>
 
+    
 
- <!------NAVBAR---------->
+ <!------MenuMobile---------->
  
   <section id="container-navbar">
 
     <div id="headerNavbar">
         <div class="fotoUser"></div>
 
-        <button id="fecharNav"><img src="imagens/Fechar.png" alt=""></button>
+        <button id="fecharNav"><img src="imagens-icones/fechar.svg" alt=""></button>
 
-        <a href="../departamentos/login.html">Entar ou cadastrar</a>
+        <a href="../Paginas/login.html">Entar ou cadastrar</a>
     </div>
       <h1 id="menu">Menu</h1>
     <nav>
@@ -102,14 +98,7 @@
       <a href="https://www.cockpit.com.br/?lkid=1562" target="_blank">Acesse a plataforma do <span>Cockpit</span></a>
     </div>
   </section>
-     
-   <!---------CARROUSEL--------->
-   <section class="carrousel">
-    
-    </div>
-    
-   </section>
-
+  
   <!---------COMPRAR--------->
      
     <section id="boxSearch">
@@ -117,9 +106,13 @@
 
          <div id="categorias">
             
-            <span id="carros" >Comprar <br> Carros</span>
+            <span id="carros" >Comprar  Carros</span>
             
-            <span id="motos"> Comprar <br> Motos</span>
+            <span id="motos"> Comprar  Motos</span>
+
+            <span> <a  class="outros" href="https://www.webmotors.com.br/vender-carro?lkid=1020" target="_blank">Quero  Vender</a></span>
+
+            <span> <a  class="outros" href="https://www.webmotors.com.br/financiamento?lkid=1021&inst=homesearchbox%3Awebmotors%3Aheader-deslogado%3A%3Afinanciamento" target="_blank">Quero Financiar</a></span>
             
          </div>
   
@@ -128,8 +121,8 @@
             
            <input class="search-input" type="search" name="search" id="search"  placeholder=" Digite marca ou modelo do carro">
            
-          <div id="linkSearch"><a href="departamentos/anucios.html">Ver Ofertas</a></div>
-         </div>
+          <a id="linkSearch" href="Paginas/anucios.html">Ver Ofertas</a></div>
+        
        </div>
     </section>
     

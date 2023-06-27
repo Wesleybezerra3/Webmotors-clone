@@ -3,3 +3,24 @@
         display: none;
     }
 }
+@media(max-width:900px){
+    .departament{
+        display: none;
+    }
+    #linkSearch{
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+@media(min-width:900px){
+    #boxInputs{
+        display: flex;
+        position: relative;
+        align-items: center;
+       
+    }
+    #linkSearch{
+      margin-left: 10px;
+    }
+    
+}

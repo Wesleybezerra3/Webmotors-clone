@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="../css/resposividade.css">
+
+    <link rel="shortcut icon" href="../imagens-icones/favicon.png" type="image/x-icon">
+         
+  
+
+    <script src="../js/script.js" defer></script>
+    <script src="../js/script-login.js" defer></script>
+  
+    <link rel="stylesheet" href="../css/geral.css">
+    <link rel="stylesheet" href="../css/resposividade.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/login-register.css">
+    <title>Webmotors - login</title>
+</head>
+<body>
+
+    <header>
+
+        <div id="logo">
+            <a href="../index.html"><img src="../imagens-icones/logo-webmotors.svg" alt="logo"></a>
+        </div>
+        
+         <div id="hamburguer">
+          <button id="abrirNav"><img src="../imagens-icones/hamburguer.svg" alt=""></button>
+         </div>
+    
+      </header>
+      <div id="background"></div>
+
+      <!------MenuMobile---------->
+
+      <section id="container-navbar">
+    
+        <div id="headerNavbar">
+            <div class="fotoUser"></div>
+    
+            <button id="fecharNav"><img src="../imagens-icones/fechar.svg" alt=""></button>
+    
+            <a href="login.html">Entar ou cadastrar</a>
+        </div>
+          <h1 id="menu">Menu</h1>
+        <nav>
+              <details>
+              <summary  id="summary1"><h1>Comprar</h1> <img id="arrowDown1" src="../imagens-icones/arrow-down.png" alt=""></summary>
+                <div class="itemDetails"><span><img src="../imagens-icones/car-usado.svg" alt=""></span><a href="#">Carros usados</a></div>
+                <div class="itemDetails"><span><img src="../imagens-icones/car-novo.svg" alt=""></span><a href="#">Carros novos</a></div>
+                <div class="itemDetails"><span><img src="../imagens-icones/bike_motorbike_vespa_moto_icon_206580.svg" alt=""></span><a href="#">Motos usados</a></div>
+                <div class="itemDetails"><span><img src="../imagens-icones/bike_motorbike_nova.svg" alt=""></span><a href="#">Motos novas</a></div>
+              </details>
+    
+              <details>
+                <summary id="summary2"><h1>Vender</h1> <img id="arrowDown2" src="../imagens-icones/arrow-down.png" alt=""></summary>
+                  <div class="itemDetails"><span><img src="../imagens-icones/sale-car_89124.svg" alt="icone vender carro"></span><a href="#">Vender carro</a></div>
+                  <div class="itemDetails"><span><img src="../imagens-icones/bike_motorbike_vespa_moto_icon_206580.svg" alt="icone vender moto"></span><a href="#">Vender moto</a></div>
+                  <div class="itemDetails"><span><img src="../imagens-icones/Garage.svg" alt="Icone gereciamento de anúcio"></span><a href="#">Gerenciar meu anúcio</a></div>
+                 
+                </details>
+    
+              <details>
+                <summary id="summary3"><h1>Serviços</h1> <img id="arrowDown3" src="../imagens-icones/arrow-down.png" alt=""></summary>
+                  <div class="itemDetails"><span><img src="../imagens-icones/grafico.svg" alt="Icone de Tabela FIPE"></span><a href="#">Tabela FIPE</a></div>
+    
+                  <div class="itemDetails"><span><img src="../imagens-icones/money.svg" alt="Icone de Finaciamento"></span><a href="#">Finaciamento</a></div>
+    
+                  <div class="itemDetails"><span><img src="../imagens-icones/car-novo.svg" alt="Icone de Catálogo 0kilometro"></span><a href="#">Catálogo 0km</a></div>
+    
+                  <div class="itemDetails"><span><img src="../imagens-icones/shield_car.svg" alt="Icone  de Seguro veicular"></span><a href="#">Seguro veículo</a></div>
+                </details>
+    
+                <details>
+                  <summary id="summary4"><h1>Ajuda</h1> <img id="arrowDown4" src="../imagens-icones/arrow-down.png" alt=""></summary>
+                    <div class="itemDetails"><span><img src="../imagens-icones/user_you.svg" alt="icone 'para você' "></span><a href="#">Para você</a></div>
+    
+                    <div class="itemDetails"><span><img src="../imagens-icones/user_you_3.svg" alt="icone 'Para sua loja' "></span><a href="#">Para sua loja</a></div>
+    
+                    <div class="itemDetails"><span><img src="../imagens-icones/shield_security.svg" alt="icone de segurança"></span><a href="#">segurança</a></div>
+                  </details>
+        </nav>
+        <div class="footer">
+          <a href="https://www.cockpit.com.br/?lkid=1562" target="_blank">Acesse a plataforma do <span>Cockpit</span></a>
+        </div>
+      </section>
+
+         <!-----LOGIN------->
+      <section class="container-login">
+        <h1 id="title">Entre na sua conta da <br>
+          Webmotors! ;)</h1>
+         <section id="social">
+           
+          <a href="#" id="facebook">Entrar com Facebook</a>
+          <a href="#" id="google">Entrar com Google</a>
+          <a href="#" id="apple">Entrar com apple</a>
+
+          <h1>ou</h1>
+         </section>
+        <form id="formCadastro">
+           
+          <input  type="email" name="email" id="email" placeholder="E-mail" >
+
+           <div class="campoObrig" id="campoObrigEmail">Campo obrigatório</div>
+
+          <input type="password" name="senha" id="senha" placeholder=" Senha ">
+          <div id="eyeIcon"></div>
+
+           <div class="campoObrig" id="campoObrigSenha">Campo obrigatório</div>
+           
+           <a id="esqueciSenha" href="#">Esqueci minha senha</a> 
+
+           <input type="submit"  id="btnLogin" name="btnLogin" value="Entrar">
+
+           <p>Não tem uma Conta?<a href="register.html">Crie a sua</a></p>
+        </form>
+        
+      </section>
+      <p><img src="../imagens-icones/help.svg" alt="">Precisa de ajuda?<a href="#">Fale com a gente</a></p>
+      
+      <footer>
+        <div id="linksFooterLogin">
+          <ul>
+            <li><a href="#">Comprar</a></li>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Termos de uso e política de privacidade</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Atendeimento</a></li>
+          </ul>
+        </div>
+        <p>© 1995-2022 Webmotors S.A. Todos os direitos reservados.</p>
+        <p>Uma Empresa <img src="../imagens/santader.svg" alt="logo do santader"></p>
+        <div id="redesSociais">
+          <ul>
+            <li><a href="https://www.facebook.com/webmotors" target="_blank"><img src="../imagens-icones/facebook-white.svg" alt="logo facebook"></a></li>
+
+            <li><a href="https://twitter.com/webmotors" target="_blank"><img src="../imagens-icones/twiter.svg" alt=""></a></li>
+
+            <li><a href="https://www.youtube.com/webmotors" target="_blank"><img src="../imagens-icones/youtube.svg" alt=""></a></li>
+
+            <li><a href="https://www.linkedin.com/company/webmotors/" target="_blank"><img src="/imagens-icones/linkedin.svg" alt=""></a></li>
+
+            <li><a href="https://www.instagram.com/webmotors/" target="_blank"><img src="/imagens-icones/instagram.svg" alt=""></a></li>
+          </ul>
+        </div>
+      </footer>
+
+
+</body>
+</html>
