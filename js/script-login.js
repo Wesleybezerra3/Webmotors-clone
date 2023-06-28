@@ -50,7 +50,7 @@ $(document).ready(() => {
   $("#senha").keyup(() => {
     let senha = $("#senha").val();
     function verificarSenha(senha) {
-      let padrao = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/; //Pelo menos 8 caracteres, incluindo letras maiúsculas, minúsculas, números e caracteres especiais:
+      let padrao =  /^(.{8,})$/; //Pelo menos 8 caracteres
       return padrao.test(senha);
     }
     if (verificarSenha(senha) == false) {
