@@ -94,7 +94,27 @@ $(document).ready(() => {
       $("#btnRegister").css({
         "background-color": "",
       });
-    }
+    };
   });
 });
+$(document).ready(() => {
+  let url = '../imagens-icones/oculta-senha.svg';
+
+  $('#eyeIcon').click(() => {
+    if (url === '../imagens-icones/oculta-senha.svg') {
+      url = '../imagens-icones/ver-senha.svg';
+      $('#senha').prop("type","text")
+    } else {
+      url = '../imagens-icones/oculta-senha.svg';
+      $('#senha').prop("type","password")
+    }
+    
+    $('#eyeIcon').css({
+      'background-image': `url(${url})`
+    });
+  });
+});
+
+
+
 
