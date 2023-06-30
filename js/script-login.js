@@ -1,7 +1,6 @@
 // login
 $(document).ready(() => {
-
-  // sistema Validação
+  // sistema Validação/Login
 
   $("#btnLogin").click(() => {
     var email = $("#email").val();
@@ -23,7 +22,7 @@ $(document).ready(() => {
     }
   });
 
-  //  sistema Verificação
+  //  sistema Verificação/login
 
   $("#email").keyup(() => {
     let email = $("#email").val();
@@ -50,7 +49,7 @@ $(document).ready(() => {
   $("#senha").keyup(() => {
     let senha = $("#senha").val();
     function verificarSenha(senha) {
-      let padrao =  /^(.{8,})$/; //Pelo menos 8 caracteres
+      let padrao = /^(.{8,})$/; //Pelo menos 8 caracteres
       return padrao.test(senha);
     }
     if (verificarSenha(senha) == false) {
@@ -69,6 +68,26 @@ $(document).ready(() => {
       });
     }
   });
+
+  // alternar visualização de  senha
+
+  let url = "../imagens-icones/oculta-senha.svg";
+  $("#eyeIcon").click(() => {
+    if (url === "../imagens-icones/oculta-senha.svg") {
+      url = "../imagens-icones/ver-senha.svg";
+      $("#senha").prop("type", "text");
+    } else {
+      url = "../imagens-icones/oculta-senha.svg";
+      $("#senha").prop("type", "password");
+    }
+
+    $("#eyeIcon").css({
+      "background-image": `url(${url})`,
+    });
+  });
+
+  // Sistema de verificação/Register
+
   $("#name, #emailRegister").keyup(() => {
     let nome = $("#name").val();
     let email = $("#emailRegister").val();
@@ -79,7 +98,7 @@ $(document).ready(() => {
       return padrao.test(email);
     }
     function verificarNome(nome) {
-      let padrao = /^[a-zA-Z\s'-]+$/;
+      let padrao = /^[a-zA-Z]+\s[a-zA-Z]+$/;
       return padrao.test(nome);
     }
     if (verificarNome(nome) === false || verificarEmail(email) === false) {
@@ -94,27 +113,6 @@ $(document).ready(() => {
       $("#btnRegister").css({
         "background-color": "",
       });
-    };
-  });
-});
-$(document).ready(() => {
-  let url = '../imagens-icones/oculta-senha.svg';
-
-  $('#eyeIcon').click(() => {
-    if (url === '../imagens-icones/oculta-senha.svg') {
-      url = '../imagens-icones/ver-senha.svg';
-      $('#senha').prop("type","text")
-    } else {
-      url = '../imagens-icones/oculta-senha.svg';
-      $('#senha').prop("type","password")
     }
-    
-    $('#eyeIcon').css({
-      'background-image': `url(${url})`
-    });
   });
 });
-
-
-
-

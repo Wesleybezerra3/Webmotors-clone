@@ -1,87 +1,84 @@
 /*Pesquisar veiculos*/
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+body {
   margin-bottom: 1000px;
-  background-color: #ECEDF2;
+  background-color: #ecedf2;
 }
-#boxSearch{
-    
-    margin: auto;
-    padding: 10px;
-    margin-top: 400px;
-    width: 400px;
-    height: 200px;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow:5px 5px 20px rgba(0, 0, 0, 0.199) ;
-    text-align: center;
+#boxSearch {
+  margin: auto;
+  padding: 10px;
+  margin-top: 400px;
+  width: 400px;
+  height: 200px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.199);
+  text-align: center;
 }
-#categorias{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: auto;
+#categorias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: auto;
 }
-#categorias>span{
-    font-weight: 600;
-    font-family: var(--poppins);
-    color: #000000e0;
-    text-transform: uppercase;
-    margin: 10px;
-    cursor: pointer;
-    font-size: 0.8em;
+#categorias > span {
+  font-weight: 600;
+  font-family: var(--poppins);
+  color: #000000e0;
+  text-transform: uppercase;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 0.8em;
 }
-#categorias .outros{
-  color: #272424cc ;
+#categorias .outros {
+  color: #272424cc;
   text-decoration: none;
 }
-span#carros{
-    border-bottom: 3px solid #f50707;
-    
+span#carros {
+  border-bottom: 3px solid #f50707;
 }
-span#motos{
-    color: #272424a8;
+span#motos {
+  color: #272424a8;
 }
 .search-input {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 8px;
-    width: 80%;
-    height: 40px;
-    font-size: 0.8em;
-    font-family: var(--poppins);
-    background-image: url('../imagens/Github-Octicons-Search-24.32.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 35px; 
-  }
-  .search-input:focus {
-    outline: none;
-    box-shadow: 0 0 3px #aaa;
-  }
-  #linkSearch{
-    display:block;
-    box-sizing: border-box;
-    text-decoration: none;
-    border-radius: 8px;
-      
-    background-color: #f3123c;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: var(--poppins);
-    font-weight: 600;
-    font-size: 0.8em;
-    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.308);
-    padding: 10px;
-    width:80%;
-    height: 40px;
-
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  width: 80%;
+  height: 40px;
+  font-size: 0.8em;
+  font-family: var(--poppins);
+  background-image: url("../imagens/Github-Octicons-Search-24.32.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 35px;
 }
-  #linkSearch>a:hover{
-    background-color:rgb(200, 10, 46);
-  }
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 3px #aaa;
+}
+#linkSearch {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 8px;
+
+  background-color: #f3123c;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 0.8em;
+  box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.308);
+  padding: 10px;
+  width: 80%;
+  height: 40px;
+}
+#linkSearch > a:hover {
+  background-color: rgb(200, 10, 46);
+}
